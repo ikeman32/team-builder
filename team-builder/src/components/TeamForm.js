@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Teamdiv = styled.div`
 border: 1px solid red;
-width: 30%;
+width: 25%;
 margin: 0 auto;
 margin-top: 1rem;
 `;
@@ -14,6 +14,18 @@ color: whitesmoke;
 margin-bottom: 1rem;
 border-radius: 1rem;
 padding: 0.5rem;
+
+:hover{
+    background-color: crimson;
+}
+`;
+
+const Teamlbl = styled.label`
+font-size: 1.6rem;
+`;
+
+const Teaminput = styled.input`
+font-size: 1.6rem;
 `;
 
 function TeamForm(){
@@ -21,16 +33,16 @@ function TeamForm(){
     <Teamdiv>
       <form>
         <br></br>
-        <label htmlFor="name">Name: </label>
-        <input type="text" name="name" id="name" placeholder="Name" />
+        <Teamlbl htmlFor="name">Name: </Teamlbl>
+        <Teaminput type="text" name="name" id="name" placeholder="Name" />
         <br></br>
         <br></br>
-        <label htmlFor="email">Email: </label>
-        <input type="text" name="email" id="email" placeholder="Email" />
+        <Teamlbl htmlFor="email">Email: </Teamlbl>
+        <Teaminput type="text" name="email" id="email" placeholder="Email" />
         <br></br>
         <br></br>
-        <label htmlFor="role">Role: </label>
-        <input type="text" name="role" id="role" placeholder="Role" />
+        <Teamlbl htmlFor="role">Role: </Teamlbl>
+        <Teaminput type="text" name="role" id="role" placeholder="Role" />
         <br></br><br></br>
         <Teambtn type='submit'>Add Team Member</Teambtn>
       </form>
