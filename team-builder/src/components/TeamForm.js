@@ -5,12 +5,14 @@ const Teamdiv = styled.div`
 border: 1px solid red;
 width: 25%;
 margin: 0 auto;
-margin-top: 1rem;
+margin-top: 2rem;
+padding: 1rem;
 `;
 
 const Teambtn = styled.button`
 background-color: blue;
 color: whitesmoke;
+margin-left: 4rem;
 margin-bottom: 1rem;
 border-radius: 1rem;
 padding: 0.5rem;
