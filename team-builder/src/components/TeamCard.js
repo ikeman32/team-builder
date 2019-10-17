@@ -10,7 +10,7 @@ margin-left: 1rem;
 const CardDiv = styled.div`
 border: 1px solid blue;
 width: 20%;
-margin-left: 2rem;
+margin: 0 auto;
 margin-top: 2rem;
 padding: 1rem;
 `;

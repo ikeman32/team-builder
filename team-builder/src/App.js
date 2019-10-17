@@ -13,10 +13,19 @@ function App() {
     role: 'Team Lead'
   }]);
 
+  const addMember = member =>{
+    const newMember = {
+      id: Date.now(),
+      member: member.member,
+      email: member.email,
+      role: member.role
+    };
+    setTeam([...team, newMember]);
+  };
 
   return (
     <div className="App">
-      <TeamForm />
+      <TeamForm addMember={addMember} />
 
       <TeamCard 
         team={team}/>
