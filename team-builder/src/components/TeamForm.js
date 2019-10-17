@@ -30,7 +30,7 @@ const Teaminput = styled.input`
 font-size: 1.6rem;
 `;
 
-function TeamForm(){
+function TeamForm(props){
   return (
     <Teamdiv>
       <form>
